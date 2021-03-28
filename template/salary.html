@@ -1,0 +1,25 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>SalaryData</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    </head>
+
+<body>
+    <div class="login-box">
+        <h1>DETERMINING THE SALARY BY EXPERIENCE</h1>
+        <h2>Salary Data</h2>
+        <form action="calculate">
+            <div class="user-box">
+                <input type="text" name="exp" required="" value="{{exp}}">
+                <label>Experience</label>
+            </div>
+            <input type="submit" name="submit" value="predict" class="submitbtn" />
+        </form><br>
+        <h2>Result  : {{predicted}}</h2>
+    </div>
+</body>
+
+</html>
+
